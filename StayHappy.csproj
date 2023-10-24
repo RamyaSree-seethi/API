@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Migrations\20230901161832_m2.cs" />
+    <Compile Remove="Migrations\20230901161832_m2.Designer.cs" />
+    <Compile Remove="Migrations\20230901162126_mmff.cs" />
+    <Compile Remove="Migrations\20230901162126_mmff.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="nlog.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.15" />
+    <PackageReference Include="log4net.Extensions.AspNetCore" Version="1.0.0" />
+    <PackageReference Include="MailKit" Version="4.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.6" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Log4Net.AspNetCore" Version="6.1.0" />
+    <PackageReference Include="NLog" Version="5.2.4" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="5.3.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.21" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.21" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.21" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+    <PackageReference Include="System.Net.Mail.Abstractions" Version="1.1.21" />
+    <PackageReference Include="Zaabee.SmtpClient" Version="2023.1.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <EditorConfigFiles Remove="D:\StayHappy\.editorconfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\StayHappy\.editorconfig" />
+    <None Include="nlog.config" />
+  </ItemGroup>
+</Project>
